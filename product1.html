@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        var giohang = new Array();
+
+        function themvaogiohang(x) {
+            var boxsp = x.parentElement.children;
+            var hinh = boxsp[0].children[0].src;
+            var gia = boxsp[1].children[0].innerText;
+            var tensp = boxsp[2].innerText;
+            var soluong = boxsp[3].value;
+            var sp = new Array(hinh, gia, tensp, soluong);
+
+            giohang.push(sp);
+
+            console.log(giohang);
+            showcountsp();
+
+        }
+
+        function showcountsp() {
+            document.getElementById("countsp").innerHTML = giohang.length;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="giohang">
+        <a href="cart.html"><img src="images/cart.png"><span id="countsp">0</span></a>
+    </div>
+    <div class="boxcenter">
+        <div class="row mb header">
+            <h1> SIÊU THỊ TRỰC TUYẾN</h1>
+
+        </div>
+        <div class="row mb menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+            </ul>
+        </div>
+        <div class="row mb ">
+            <div class="boxtrai mr">
+                <div class="row">
+                    <div class="banner">
+                        <img src="images/Banner 1.webp" alt="">
+                    </div>
+                </div>
+                <style>
+                    .card-img-top {
+                    width: 500px;
+                    height: 500px;
+                }
+                </style>
+                <div class="row">
+                    <div class="col-md-6 col-lg-5 mb-4">
+                        <div class="card">
+                            <img src="images/1.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-7 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h2 class="card-title">
+                                    <a href="#" class="text-decoration-none">Laptop MSI Prestige 13 Evo A13M 081VN</a>
+                                </h2>
+                                <h3 class="text-danger">1000$</h3>
+                                <ul>
+                                    <h2>✔ Bảo hành chính hãng 24 tháng.</h2>
+                                    <h2>✔ Hỗ trợ đổi mới trong 7 ngày. </h2>
+                                    <h2>✔ Windows bản quyền tích hợp.</h2>
+                                    <h2>✔ Miễn phí giao hàng toàn quốc.</h2>
+                                </ul>
+                                <p class="card-text">
+                                  Quà tặng:
+                                  <h2>- Chuột không dây Logitech M331 Silent</h2>
+                                  <h2>- Tai nghe Havit TW932</h2>
+                                </p>
+                                <p class="card-text">
+                                  <h2>⭐ Mua túi chống sốc chỉ với giá 49.000đ</h2>
+                                  <h2>⭐ Giảm ngay 100.000đ khi mua kèm Ram Laptop.</h2>
+                                  <h2>⭐ Giảm đến 200.000đ khi mua kèm Balo, túi chống sốc, phụ kiện.</h2>
+                                  <h2>⭐ Giảm ngay 30.000đ khi mua Đế tản nhiệt Laptop.</h2>
+                                  <h2>⭐ Giảm ngay 100.000đ khi mua chuột TUF Gaming M3, Logitech G203, G102.</h2>
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <button type="button" class="btn btn-danger px-5">Mua ngay</button>
+                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-cart-plus cart-icon"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+            </div>
+          
+                <div class="row mb">
+                    <div class="boxtitle">DANH MỤC</div>
+                    <div class="boxcontent2 menudoc">
+                        <ul>
+                            <li>
+                                <a href="#">Laptop</a>
+                            </li>
+                            <li>
+                                <a href="#">Laptop Gaming</a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="boxfooter searbox">
+                        <form action="#" method="post">
+                            <input type="text" name="" id="">
+                        </form>
+                    </div>
+                </div>
+               
+                </div>
+            </div>
+        </div>
+        <div class="row mb footer">
+            Copyright © 2023 - MINH HUY
+        </div>
+    </div>
+
+</body>
+
+</html>
